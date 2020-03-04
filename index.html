@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Verifique se a senha é segura</title>
+    <link rel="shortcut icon" href="/secure.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Verifique se a senha é segura</h1>
+            <p>Faça o teste e saiba quanto tempo leva para sua senha ser hackeada.</p>
+            <div class="space">
+                <div class="col align-self-center container-1 ">
+                    <input type="password" id="search" placeholder="Senha..." />
+                </div>
+            </div>
+
+            <div class="row space center">
+
+                <div class="col-sm-3 col-xs-5">
+                    <button data-toggle="modal" data-target=".bs-example-modal-lg">Teste sua senha <span class="glyphicon glyphicon-scale"></span></button>
+                </div>
+                <div class="col-sm-3 col-xs-5">
+                    <button id="generate" data-hover="click me!">Gere uma senha <span class="glyphicon glyphicon-lock"></span></button>
+                    <div class="size">
+                        <div class="input-group">
+                            <span class="input-group-btn"><button class="btn btn-default value-control" data-action="minus" data-target="font-size"><span class="glyphicon glyphicon-minus"></span></button>
+                            </span>
+                            <input type="text" value="8" class="password-length form-control" id="font-size">
+                            <span class="input-group-btn"><button class="btn btn-default value-control" data-action="plus" data-target="font-size"><span class="glyphicon glyphicon-plus"></span></button>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row justify-content-md-center">
+                                <div class="col col-lg-5 col-xs-">
+                                    <img class="img" src="gif-password.gif" height="260">
+                                </div>
+                                <div class="col col-lg-6">
+                                   <H2 id="test">Primeior digite uma senha</H2>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col align-self-center">
+                    <div id="alert-box" class="alert-message error">
+                        <div class="box-icon"><span id="icon" class="glyphicon glyphicon-remove"></span></div>
+                        <p id="bad">sua senha nao e segura</p>
+                        <div class="aro-pswd_info">
+                            <ul style="list-style-type:none">
+                                <li id="letter">Deve ter ao menos uma letra</li>
+                                <li id="capital">Deve ter ao menos uma maiuscula</li>
+                                <li id="number">Deve ter ao menos um numero</li>
+                                <li id="length">Deve ter 8 caracteres</li>
+                                <li id="space">Deve ter caracteres especiais [~,!,@,#,$,%,^,&,*,-,=,.,;,']</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container text-center">
+	<div class="row" id="te">
+	
+		<h1>Veja ótimas dicas para se proteger na internet </h1>
+        <h4>Clique aqui</h4>
+        <div class="round hollow text-center">
+        <a href="http://guiadeseguranca.co.nf/" id="use"><span class="fa fa-bullhorn"></span> Guia de segurança </a>
+        </div>
+        
+                 
+	</div>
+</div>
+
+    
+    
+    <footer>
+            
+        <p style="padding-top: 22px">© 2017 - Site Built By <a href="me.html">Bruno Régis</a></p>
+ 
+
+</footer>
+    
+</body>
+
+</html>

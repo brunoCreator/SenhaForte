@@ -1,0 +1,125 @@
+img{
+    
+}
+h1,h2{
+    font-family: inherit;
+}
+p{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+.tabs-left > .nav-tabs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #8E9B97;
+  
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-left > .nav-tabs > li {
+  float: none;
+    margin-bottom: 0;
+}
+
+.tabs-left > .nav-tabs > li > a {
+    margin: 0;
+  padding: 0;
+  display:block;
+    height:em;
+    width:5em;
+    text-align:center;
+    line-height:5em;
+    color: #2C4A52;
+    background:#8E9B97;
+    position: relative;
+    border-bottom: 1px solid #ffe2e3;
+    transition: background 0.3s ease-in-out;
+    border: 0;
+    border-radius: 0;
+}
+
+.tabs-left > .nav-tabs > li > a > span:before{
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.tabs-left > .nav-tabs > li:hover{
+  background: #2C4A52;
+  color: #fff;
+    margin-bottom: 0;
+}
+
+.tabs-left > .nav-tabs li.current a {
+  background: #2C4A52;
+  color: #fff;
+}
+
+.tabs-left > .nav-tabs > li:after{
+    content: attr(title);
+    white-space: nowrap;
+    position:absolute;
+    left:5em;
+    top:0;
+    height:5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform:uppercase;
+    background:#2C4A52;
+    padding:2em;
+    transition: all 0.3s ease-in-out;
+    visibility:hidden;
+    opacity:0;
+    border: 0;
+}
+
+.tabs-left > .nav-tabs > li:hover:after{
+    visibility:visible;
+    opacity:1;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  background: #2C4A52;
+  color: #fff;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  background: #2C4A52;
+  color: #fff;
+    border: 0;
+    border-radius: 0;
+}
+.tabs-left > .nav-tabs .active > a:after{
+    position:absolute;
+    left:5em;
+    top:0;
+    content:"";
+    border:2.5em solid transparent;
+    border-left-color:#2C4A52;
+    border-width: 2.5em 1em;
+}
+
+@media screen and (max-height: 34em){
+  .tabs-left > .nav-tabs > li{
+    font-size:70%;
+  }
+}
